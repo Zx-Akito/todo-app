@@ -16,7 +16,6 @@ function App() {
   const [input, setInput] = useState("");
   const [open, setOpen] = useState(false);
   const [ispriority, setIspriority] = useState(false);
-  const [name, setName] = useState("");
 
   useEffect(() => {
     loadTodos();
@@ -49,7 +48,7 @@ function App() {
   return (
     <div className="p-8 relative">
       <div className="flex justify-between items-center sticky top-0 bg-white z-10 p-4 border-b border-gray-200">
-        <h1 className="text-2xl">Hai {name}, Selamat Datang</h1>
+        <h1 className="text-2xl">Hai, Selamat Datang</h1>
         <button className="bg-blue-500 hover:bg-blue-600 text-white w-10 h-10 rounded-md text-xl font-bold transition-colors cursor-pointer" onClick={() => setOpen(true)}>+</button>
       </div>
 
